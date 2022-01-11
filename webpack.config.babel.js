@@ -142,7 +142,7 @@ export default {
   mode: isProd ? 'production' : 'development',
   target: isProd ? ['web', 'es5'] : 'web',
   context: path.resolve(__dirname, 'src'),
-  entry: ['./index.tsx'],
+  entry: isProd ? ['./index.tsx'] : [path.resolve(__dirname, './cleanOnHMR.js'), './index.tsx'],
   output: {
     publicPath: '/',
     filename: fileName('js'),

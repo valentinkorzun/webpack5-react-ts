@@ -1,20 +1,24 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import RetroShoe from '@images/retro-shoe.jpg';
 
-export default () => {
+const Card = ({name}: {name: string}) => {
+  const [value, setValue] = useState('');
+
   return (
     <div className="flex p-6 font-mono">
       <div
         className="flex-none w-48 mb-10 relative z-10 before:absolute
       before:top-1 before:left-1 before:w-full before:h-full before:bg-teal-400"
       >
+        <input type="text" value={value} onChange={(e) => setValue(e.target.value)} />
         <img
           src={RetroShoe}
           alt=""
           className="absolute z-10 inset-0 w-full h-full object-cover rounded-lg"
         />
       </div>
+      {name}
       <form className="flex-auto pl-6">
         <div
           className="relative flex flex-wrap items-baseline pb-6
@@ -126,3 +130,5 @@ export default () => {
     </div>
   );
 };
+
+export default Card;

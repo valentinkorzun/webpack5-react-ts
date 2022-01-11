@@ -4,3 +4,4 @@ build
 webpack.config.babel.js
 tailwind.config.js
 postcss.config.js
+cleanOnHMR.js
