@@ -15,7 +15,6 @@ const Card = () => {
           className="absolute z-10 inset-0 w-full h-full object-cover rounded-lg"
         />
       </div>
-      {name}
       <form className="flex-auto pl-6">
         <div
           className="relative flex flex-wrap items-baseline pb-6

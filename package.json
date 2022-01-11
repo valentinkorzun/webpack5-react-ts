@@ -12,8 +12,9 @@
     "release": "npm version patch"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": ["rustywind --write", "prettier --write"],
-    "*.{js,jsx,ts,tsx,md,html,css}": ["prettier --write"]
+    "*.{js,jsx,ts,tsx,md,html,css}": [
+      "prettier --write"
+    ]
   },
   "husky": {
     "hooks": {
@@ -73,7 +74,6 @@
     "regenerator-runtime": "~0.13.9",
     "remove-files-webpack-plugin": "^1.5.0",
     "resolve-url-loader": "~4.0.0",
-    "rustywind": "^0.12.2",
     "sass": "~1.45.0",
     "sass-loader": "~12.4.0",
     "sass-resources-loader": "~2.2.4",
