@@ -3,6 +3,8 @@ import React from 'react';
 import RetroShoe from '@images/retro-shoe.jpg';
 
 const Card = () => {
+  // eslint-disable-next-line no-console
+  console.log('test');
   return (
     <div className="flex p-6 font-mono">
       <div
