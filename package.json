@@ -12,8 +12,8 @@
     "release": "npm version patch"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx,md,html,css}": ["prettier --write"],
-    "*.{js,jsx,ts,tsx}": ["rustywind --write"]
+    "*.{js,jsx,ts,tsx}": ["rustywind --write", "prettier --write"],
+    "*.{js,jsx,ts,tsx,md,html,css}": ["prettier --write"]
   },
   "husky": {
     "hooks": {
