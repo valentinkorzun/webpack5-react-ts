@@ -14,7 +14,7 @@ phases:
       - npm run build
   post_build:
     commands:
-      - aws s3 cp --recursive --acl public-read ./build s3://test-code-pipe-line/
+      - aws s3 sync ./build s3://test-code-pipe-line/ --delete
       - aws cloudfront create-invalidation --distribution-id E1KEXHGIXDGA9D --paths /*
 artifacts:
   files:
