@@ -20,6 +20,8 @@ const arrayFilterEmpty = (array) => array.filter((x) => !!x);
 const fileName = (ext) => `[name].[contenthash].${ext}`;
 
 console.log(process.env)
+const react = process.env.REACT_APP_LANDING_URL
+console.log(react)
 
 // plugins
 const removePlugin = new RemovePlugin({
