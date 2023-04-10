@@ -19,7 +19,7 @@ const port = 3000;
 const arrayFilterEmpty = (array) => array.filter((x) => !!x);
 const fileName = (ext) => `[name].[contenthash].${ext}`;
 
-console.log(process.env.REACT_APP_LANDING_URL)
+console.log(process.env)
 
 // plugins
 const removePlugin = new RemovePlugin({
